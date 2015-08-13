@@ -1,0 +1,11 @@
+Bookmarklet: Save Google Maps directions to text
+
+1. Bookmark any page
+
+2. Change name: "Gmaps to Text Directions"
+
+3. Change URL: javascript:( function () { window.open ( "data:text/html," + "<title>Directions</title><h1>Directions:</h1>" + Array.prototype.map.call ( document.querySelectorAll ( ".tactile-searchbox-input" ), function ( node ) { return node.value } ).join ( "<br />" ), "Directions" + Date.now () ); } ) ();
+
+4. Save the bookmark
+
+5. Make directions in Google Maps and click the bookmarklet
